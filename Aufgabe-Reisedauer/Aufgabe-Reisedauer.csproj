@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3017B1B-9A2B-4B5A-A50C-4E77903848BB}</ProjectGuid>
+    <ProjectGuid>{50A9FEC1-2776-4EFD-9EA3-1978E9587B5A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Aufgabe</RootNamespace>
-    <AssemblyName>Aufgabe</AssemblyName>
+    <RootNamespace>Aufgabe_Reisedauer</RootNamespace>
+    <AssemblyName>Aufgabe-Reisedauer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mondreise.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

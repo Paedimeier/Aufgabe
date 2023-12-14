@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3017B1B-9A2B-4B5A-A50C-4E77903848BB}</ProjectGuid>
+    <ProjectGuid>{7E05977D-EFAE-4B1A-BD59-67C2115F4717}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Aufgabe</RootNamespace>
-    <AssemblyName>Aufgabe</AssemblyName>
+    <RootNamespace>Aufgabe_Rechteck</RootNamespace>
+    <AssemblyName>Aufgabe-Rechteck</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rechteck.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

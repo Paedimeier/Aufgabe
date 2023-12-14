@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Aufgabe
+namespace Aufgabe_Tannenbaum
 {
     public partial class Form1 : Form
     {
@@ -17,14 +17,17 @@ namespace Aufgabe
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Tanne t = new Tanne();
+            t.Stammbreite =
+            t.Zeichnung =
+            t.Kronenhoehe =
         }
 
-        private void buttonOK_Click(object sender, EventArgs e)
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World!");
+
         }
     }
 }
