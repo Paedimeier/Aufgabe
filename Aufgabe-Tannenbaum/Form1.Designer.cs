@@ -81,7 +81,7 @@
             // 
             // SHöhe
             // 
-            this.SHöhe.Location = new System.Drawing.Point(128, 65);
+            this.SHöhe.Location = new System.Drawing.Point(128, 62);
             this.SHöhe.Name = "SHöhe";
             this.SHöhe.Size = new System.Drawing.Size(129, 26);
             this.SHöhe.TabIndex = 5;
@@ -104,7 +104,6 @@
             this.Ausgabe.ReadOnly = true;
             this.Ausgabe.Size = new System.Drawing.Size(413, 510);
             this.Ausgabe.TabIndex = 7;
-            this.Ausgabe.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // Form1
             // 
@@ -120,6 +119,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

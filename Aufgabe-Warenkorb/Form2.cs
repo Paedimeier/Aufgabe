@@ -21,5 +21,26 @@ namespace Aufgabe_Warenkorb
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        public static bool form2Open = false;
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            form2Open = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            {
+                this.Close();
+            }
+        }
     }
 }

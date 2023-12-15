@@ -19,13 +19,15 @@ namespace Aufgabe_Tannenbaum
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Tanne t = new Tanne();
-            t.Stammbreite =
-            t.Zeichnung =
-            t.Kronenhoehe =
+            int b = Convert.ToInt32(breite.Text);
+            int sh = Convert.ToInt32(SHöhe.Text);
+            int kh = Convert.ToInt32(KHöhe.Text);
+            Tanne t = new Tanne(b, sh, kh);
+            t.Zeichne();
+            Ausgabe.Text = t.Zeichnung;
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

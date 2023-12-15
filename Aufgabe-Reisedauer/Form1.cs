@@ -12,14 +12,10 @@ namespace Aufgabe_Reisedauer
 {
     public partial class Form1 : Form
     {
-        private Mondreise _mondreise;
-        private RadioButton radioButtonStunden;
-        private Label labelReisedauer;
 
         public Form1()
         {
             InitializeComponent();
-            _mondreise = new Mondreise(1500);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -30,20 +26,23 @@ namespace Aufgabe_Reisedauer
 
         private void berechenen_Click(object sender, EventArgs e)
         {
-            const double distanz = 384400;
-            double geschwindigkeit = double.Parse(Eingabe.Text);
-            double reisedauerInStunden = distanz / geschwindigkeit;
-            double reisedauerInTagen = reisedauerInStunden / 24;
+            Mondreise mondreise = new Mondreise();
+
+            mondreise.Geschwindigkeit = Convert.ToDouble(Eingabe.Text);
 
             if (Hours.Checked)
             {
-                Ausgabe.Text = reisedauerInStunden.ToString("0.00");
+                Ausgabe.Text = mondreise.GetReisedauerInH().ToString();
             }
             else
             {
-                Ausgabe.Text = reisedauerInTagen.ToString("0.00");
+                Ausgabe.Text = mondreise.GetReisedauerInD().ToString();
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

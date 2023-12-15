@@ -35,10 +35,19 @@ namespace Aufgabe_Rechteck
 
         private void Berechnen_Click(object sender, EventArgs e)
         {
-            double wert1 = double.Parse(Breitetxt.Text);
-            double wert2 = double.Parse(Höhetxt.Text);
-            double ergebnis = wert1 * wert2;
-            Ergebnis.Text = ergebnis.ToString();
+            Rechteck rechteck = new Rechteck();
+            rechteck.Height = Convert.ToDouble(Höhetxt.Text);
+            rechteck.Width = Convert.ToDouble(Breitetxt.Text);
+
+            MessageBox.Show(rechteck.Height.ToString());
+
+            Ergebnis.Text = rechteck.GetArea().ToString();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

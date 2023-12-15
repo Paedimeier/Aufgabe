@@ -6,31 +6,25 @@ using System.Threading.Tasks;
 
 public class Mondreise
 {
-    private double _geschwindigkeit;
-    private double _entfernung;
-    private double _reisedauer;
-    private string _einheit;
+    double geschwindigkeit;
+    double entfernung;
+    double reisedauer;
 
-    public Mondreise(double geschwindigkeit)
+    public double Geschwindigkeit
     {
-        _geschwindigkeit = geschwindigkeit;
-        _entfernung = 384400;
-        _reisedauer = _entfernung / _geschwindigkeit;
-        _einheit = "Stunden";
+        get { return geschwindigkeit; }
+        set { geschwindigkeit = value; }
     }
-
-    public double GetReisedauer()
+    public Mondreise()
     {
-        return _reisedauer;
+        entfernung = 384400;
     }
-
-    public string GetEinheit()
+    public double GetReisedauerInH()
     {
-        return _einheit;
+        return entfernung / geschwindigkeit;
     }
-
-    public void SetEinheit(string einheit)
+    public double GetReisedauerInD()
     {
-
+        return (entfernung / geschwindigkeit) / 24;
     }
 }
